@@ -416,7 +416,11 @@ ul.sf-menu li li li.sfHover ul {
 /*=== Images ===*/
 img, .frame {
 	max-width: 100%;
-	height: auto;
+	height: auto;	
+}
+.product{
+	width: 220px;
+	height: 190px;
 }
 .entry-content img{max-width:100%;}
 img[class*="wp-image-"],
