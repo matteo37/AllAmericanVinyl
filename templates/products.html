@@ -22,12 +22,12 @@
 	<!-- CSS
   ================================================== -->
   	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="styles/skeleton.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/inner.css" />
-    <link rel="stylesheet" href="styles/flexslider.css" />
-    <link rel="stylesheet" href="styles/color.css" />
-	<link rel="stylesheet" href="styles/layout.css" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/styles/skeleton.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/styles/style.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/styles/inner.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/styles/flexslider.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}/styles/color.css" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}/styles/layout.css" />
     
 
 	<!--[if lt IE 9]>
@@ -36,10 +36,10 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico" />
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+	<link rel="shortcut icon" href="{{ MEDIA_URL }}/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ MEDIA_URL }}/images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ MEDIA_URL }}/images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ MEDIA_URL }}/images/apple-touch-icon-114x114.png" />
     
     
 </head>
@@ -107,13 +107,13 @@
                 <div class="nine columns alpha">      
                 	<div id="propertyimage" class="flexslider">
                     	<ul class="slides">						                            
-                            <li data-thumb="images/content/pr-slider/img1.jpg"><img src="images/content/pr-slider/img1.jpg" /></li>
-                            <li data-thumb="images/content/pr-slider/img2.jpg"><img src="images/content/pr-slider/img2.jpg" /></li>
-                  			<li data-thumb="images/content/pr-slider/img3.jpg"><img src="images/content/pr-slider/img3.jpg" /></li>
-                            <li data-thumb="images/content/pr-slider/img4.jpg"><img src="images/content/pr-slider/img4.jpg" /></li>
-                            <li data-thumb="images/content/pr-slider/img5.jpg"><img src="images/content/pr-slider/img5.jpg" /></li>
-                            <li data-thumb="images/content/pr-slider/img6.jpg"><img src="images/content/pr-slider/img6.jpg" /></li>
-                            <li data-thumb="images/content/pr-slider/img7.jpg"><img src="images/content/pr-slider/img7.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img1.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img1.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img2.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img2.jpg" /></li>
+                  			<li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img3.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img3.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img4.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img4.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img5.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img5.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img6.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img6.jpg" /></li>
+                            <li data-thumb="{{ MEDIA_URL }}/images/content/pr-slider/img7.jpg"><img src="{{ MEDIA_URL }}/images/content/pr-slider/img7.jpg" /></li>
                         </ul>
                     </div>        
                 </div>
@@ -173,13 +173,13 @@
                                 <h2 class="widget-title"><span>Latest Post</span></h2>
                                 <ul class="ts-recent-post-widget">
 									<li>                                                                       
-                                        <img src= "images/content/post-thumb1.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                        
+                                        <img src= "{{ MEDIA_URL }}/images/content/post-thumb1.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                        
                                         <h3><a href="#">Donec vulputate velit ut turpis vehicula pulvinar.</a></h3>             
                                         <span class="smalldate">September 05, 2012</span>              
                                         <span class="clear"></span>
                                     </li>
                                     <li>                              
-                                        <img src="images/content/post-thumb2.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                       
+                                        <img src="{{ MEDIA_URL }}/images/content/post-thumb2.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                       
                                         <h3><a href="#"> Sed sodales nisi id enim vestibulum.</a></h3>                  
                                         <span class="smalldate">September 05, 2012</span>              
                                         <span class="clear"></span>
