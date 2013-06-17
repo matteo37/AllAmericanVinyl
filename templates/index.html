@@ -55,10 +55,10 @@
         <div id="outerheader">
         	<div class="container">
             <header id="top" class="twelve columns">
-            	<div id="logo"  class="three columns alpha"><h1><a href="index"><span class="titleBold">AllAmerican</span><span class="colortext">Vinyl</span></a></h1></div>
-                <div style="float:right"><span>Phone: (801) 373-1308 </span></div>
+            	<div id="logo"  class="four columns alpha"><h1><a href="index"><span class="titleBold">All American </span><span class="colortext">Vinyl</span></a></h1><h3>of Utah</h3></div>
+                <div style="float:right" id="phone"><h2><span class="colortext">Phone: </span> <span>(801) 373-1308 </span></h2></div>
 
-                <section id="navigation" class="nine columns omega">
+                <section id="navigation" class="eight columns omega">
                     <nav id="nav-wrap">
                         <ul id="topnav" class="sf-menu">
 				<li class="current"><a href={% url 'vinylSite.views.home' %}>Home</a></li>
@@ -66,7 +66,7 @@
                             	<ul>
                                 	<li><a href="element.html">Elements</a></li>
                                     <li><a href="single.html">Blog Details</a></li>
-                                    <li><a href="property-detail.html">Property Details</a></li>
+                                    <li><a href="products">Property Details</a></li>
                                 </ul>
 				</li>
 				<li><a href={%url 'vinylSite.views.products'%}>Products</a></li>
@@ -104,24 +104,24 @@
                             </div>
                             
                             <div id="htmlcaption1" class="nivo-html-caption">
-                                <h1 class="titlesliderproperty">140 Spring Lanes Beverly Hills California 90210</h1>
-                                <span class="priceslider colortext">$ 1,900,000</span>
-                                <div class="slidetext">Magnis et nec lundium scelerisque risus placerat massa sagittis. Pulvinar! Mus nunc! Amet in integer, etiam augue placer...</div>
-                                <a href="#" class="button">Read More Details</a>
+                                <h1 class="titlesliderproperty">Expert Consultations</h1>
+                                <span class="priceslider colortext">Free On Site Estimates</span>
+                                <div class="slidetext">White 6' Solid Privacy Fencing starting at $14/ft 150ft minimum</div>
+                                <a href="#" class="button">Contact Us</a>
                             </div>
                             
                             <div id="htmlcaption2" class="nivo-html-caption">
-                                <h1 class="titlesliderproperty">26 Cotton Crossing Savannah  Georgia  50210</h1>
-                                <span class="priceslider colortext">$ 2,200</span>
+                                <h1 class="titlesliderproperty">Paid Installation or Do-it-Yourself</h1>
+                                <span class="priceslider colortext">New Fencing and Repairs</span>
                                 <div class="slidetext">Magnis et nec lundium scelerisque risus placerat massa sagittis. Pulvinar! Mus nunc! Amet in integer, etiam augue placer...</div>
-                                <a href="#" class="button">Read More Details</a>
+                                <a href="#" class="button">Contact Us</a>
                             </div>
                             
                             <div id="htmlcaption3" class="nivo-html-caption">
-                                <h1 class="titlesliderproperty">196 Royal Bluff Rd Jacksonville North Carolina  50212</h1>
-                                <span class="priceslider colortext">$ 3,200</span>
+                                <h1 class="titlesliderproperty">5 Year Installation Warranty</h1>
+                                <span class="priceslider colortext">Lifetime Product Warranty</span>
                                 <div class="slidetext">Magnis et nec lundium scelerisque risus placerat massa sagittis. Pulvinar! Mus nunc! Amet in integer, etiam augue placer...</div>
-                                <a href="#" class="button">Read More Details</a>
+                                <a href="#" class="button">Contact Us</a>
                             </div>                    
                         </div>    
                     </section>
@@ -141,20 +141,9 @@
                 <div>
                     <p>All American Vinyl  provides high quality, maintenance free vinyl fencing and more. We offering outstanding customer service with high quality, affordable products, you can rest assured you have come to the right place for all your fencing, railings, decking and more.</p>
                 </div>
-       <!--          <div class="one_third firstcols">
-                    <h4 class="titleUppercase valignMiddle"><img src="{{ MEDIA_URL }}images/icons/icon1.png" alt="" class="alignleft" />Creative Solution</h4>
-                    <div>Donec vitae justo ac arcu vulputate venenatis ac sit amet metus. Suspendisse est velit, consequat ac viverra vel, viverra dictum arcu.</div>
-                </div>
-                <div class="one_third ">
-                    <h4 class="titleUppercase valignMiddle"><img src="{{ MEDIA_URL }}images/icons/icon2.png" alt="" class="alignleft" />Customer Features</h4>
-                    <div>Donec vitae justo ac arcu vulputate venenatis ac sit amet metus. Suspendisse est velit, consequat ac viverra vel, viverra dictum arcu.</div>
-                </div>
-                <div class="one_third lastcols">
-                    <h4 class="titleUppercase valignMiddle"><img src="{{ MEDIA_URL }}images/icons/icon3.png" alt="" class="alignleft" />Helpful Serivces</h4>
-                    <div>Donec vitae justo ac arcu vulputate venenatis ac sit amet metus. Suspendisse est velit, consequat ac viverra vel, viverra dictum arcu.</div>
-                </div> -->
+
                 
-                <h4 class="titleUppercase titleBorder">Our Products</h4>
+                <h4 class="titleUppercase titleBorder">Some of Our Products</h4>
                 <div class="ts-display-properties">
                     <ul class="property-items">
                         <li>
@@ -168,7 +157,7 @@
                             
                                 <div class="pricebutton">
                                     <span class="price">$35/ft</span>
-                                    <a href="property-detail.html" class="button">View all Products</a>
+                                    <a href="products" class="button">View all Products</a>
                                 </div>
                             </div>
                         </li>
@@ -184,7 +173,7 @@
                             
                                 <div class="pricebutton">
                                     <span class="price">$15/ft </span>
-                                    <a href="property-detail.html" class="button">View all Products</a>
+                                    <a href="products" class="button">View all Products</a>
                                 </div>
                             </div>
                         </li>
@@ -200,7 +189,7 @@
                             
                                 <div class="pricebutton">
                                     <span class="price">$25/ft </span>
-                                    <a href="property-detail.html" class="button">View all Products</a>
+                                    <a href="products" class="button">View all Products</a>
                                 </div>
                             </div>
                         </li>
@@ -216,7 +205,7 @@
                             
                                 <div class="pricebutton">
                                     <span class="price">$35/ft </span>
-                                    <a href="property-detail.html" class="button">View all Products</a>
+                                    <a href="products" class="button">View all Products</a>
                                 </div>
                             </div>
                         </li>
@@ -240,66 +229,17 @@
         	<div class="container">
                 <div id="footersidebarcontainer" class="twelve columns"> 
                     <footer id="footersidebar">
-                    <div id="footcol1" class="three columns alpha">
-                    <ul>
-                        <li class="widget-container">
-                            <h2 class="widget-title"><span>About Us</span></h2>
-                            <div class="textwidget">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum nisi eu ante mattis sit amet luctus nisl tempus.</p>
-								<p>Nulla euismod mollis est vel posuere. Suspendisse potenti.</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="center">
+                        Address:
+                        450 South 1100 West 
+                        Provo, Utah 84601 
+                        <br>
+                        Phone: 801-874-3191 
+                        Alt. Phone: 801-373-1308 
+                        Fax: 801-373-3692 
+                        <br>
+                        Email: <a href="mailto:allamericanvinyl@gmail.com">allamericanvinyl@gmail.com</a>
                     </div>
-                    <div id="footcol2"  class="three columns">
-                        <ul>
-                            <li class="widget-container">
-                                <h2 class="widget-title"><span>Latest Post</span></h2>
-                                <ul class="ts-recent-post-widget">
-									<li>                                                                       
-                                        <img src= "{{ MEDIA_URL }}images/content/post-thumb1.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                        
-                                        <h3><a href="#">Donec vulputate velit ut turpis vehicula pulvinar.</a></h3>             
-                                        <span class="smalldate">September 05, 2012</span>              
-                                        <span class="clear"></span>
-                                    </li>
-                                    <li>                              
-                                        <img src="{{ MEDIA_URL }}images/content/post-thumb2.jpg" alt=""  class="alignleft scale-with-grid"/>                                                                       
-                                        <h3><a href="#"> Sed sodales nisi id enim vestibulum.</a></h3>                  
-                                        <span class="smalldate">September 05, 2012</span>              
-                                        <span class="clear"></span>
-                                    </li>
-                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="footcol3"  class="three columns">
-                        <ul>
-                            <li class="widget-container">
-                                <h2 class="widget-title"><span>Categories</span></h2>
-                                <ul>
-                                    <li><a href="#">House Remodeling</a></li>
-                                    <li><a href="#">Minimalist Home</a></li>
-                                    <li><a href="#">Luxury Home</a></li>
-                                    <li><a href="#">Modern Home</a></li>
-                                    <li><a href="#">Naturalis Home</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="footcol4" class="three columns omega">
-                        <ul>
-                            <li class="widget-container">
-                                <h2 class="widget-title"><span>Street Address</span></h2>
-                                PureParadise -- Blvd No. 356-357. <br/>
-                                Farmville Town, LA 12345<br/>
-                                Telp: +62 500 800 123<br/>
-                                Fax: +62 500 800 112<br/>
-                                Email: <a href="mailto:testmail@yourdomain.com" class="colortext">testmail@yourdomain.com</a><br/>
-                                Website: <a href="http://www.templatesquare.com" class="colortext">www.templatesquare.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
                     </footer>
                 </div>
             </div>
@@ -314,8 +254,7 @@
         <div id="outerfooter">
             <div class="container">
                 <div id="footercontainer" class="twelve columns">
-                    <footer id="footer">Copyright &copy;2011-2012 PureParadise Design by	<a href="http://templatesquare.com" title="" class="colortext">
-                    TemplateSquare.com</a>
+                    <footer id="footer">Copyright &copy; All American Vinyl LLC, 2012. All rights reserved. 
                 </footer>
                 </div>
             </div>

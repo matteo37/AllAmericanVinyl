@@ -83,6 +83,9 @@ a img{border:none}
 
 
 /* float align */
+.center{
+	text-align: center;
+}
 .alignleft,
 img.alignleft {
 	display: inline;
@@ -236,6 +239,9 @@ nav{float:right;}
 #topnav > li{ margin:0 0 0 22px; word-spacing:2px}
 #topnav > li:first-child{ margin-left:0px;}
 
+#phone {
+	width:180px
+}
 .sf-menu a {
 	text-decoration:none!important;
 	display:		block;
