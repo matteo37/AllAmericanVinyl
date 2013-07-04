@@ -1,0 +1,30 @@
+<nav id="nav-wrap">
+<ul id="topnav" class="sf-menu">
+
+	<li><a href={% url 'vinylSite.views.home' %}>Home</a></li>
+	
+	<li><a href={% url 'vinylSite.views.about_us' %}>About</a>
+	<ul>
+		<li><a href="element.html">Elements</a></li>
+	    	<li><a href="single.html">Blog Details</a></li>
+	    	<li><a href="products">Property Details</a></li>
+	</ul>
+	</li>
+	
+	<li><a href={%url 'vinylSite.views.products'%}>Products</a></li>
+	
+	{% comment %}
+    <li><a href="#">Portfolio</a>
+	<ul>
+		<li><a href="portfolio2.html">Portfolio 2 Column</a></li>
+	    <li><a href="portfolio3.html">Portfolio 3 Column</a></li>
+	    <li><a href="portfolio4.html">Portfolio 4 Column</a></li>
+	</ul>
+    </li>
+    <li><a href="blog.html">Blog</a></li>
+	{% endcomment %}
+	
+	<li><a href={% url 'vinylSite.views.contact'%}>Contact</a></li>
+
+</ul><!-- topnav -->
+</nav><!-- nav -->	
