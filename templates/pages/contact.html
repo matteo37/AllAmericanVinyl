@@ -54,7 +54,9 @@
             <header id="top" class="twelve columns">
             	<div id="logo"  class="three columns alpha"><h1><a href="index.html"><span class="titleBold">Pure</span><span class="colortext">Paradise</span></a></h1></div>
                 <section id="navigation" class="nine columns omega">
-			{%include 'topnav.html'%}
+		{% load pages_tags %}
+	
+		{% page_menu "pages/menus/topnav.html" %}
                     <div class="clear"></div>
                 </section>
                 <div class="clear"></div>
