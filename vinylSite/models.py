@@ -17,5 +17,5 @@ class Product(models.Model):
     name = models.TextField()
     height = models.DecimalField(decimal_places=2,max_digits=7)
     length = models.DecimalField(decimal_places=2,max_digits=7)
-    picture = models.FileField(upload_to='products')
+    picture = models.ImageField(upload_to='products',null=True)
 # Create your models here.

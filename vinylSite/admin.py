@@ -17,7 +17,7 @@ class MyPageAdmin(PageAdmin):
     fieldsets = deepcopy(PageAdmin.fieldsets) #+ extra_fieldsets
 
 
-admin.site.register(Contact, MyPageAdmin)
+admin.site.register(Contact, PageAdmin)
 admin.site.register(Products, MyPageAdmin)
-admin.site.register(About, MyPageAdmin)
+admin.site.register(About, PageAdmin)
 admin.site.register(Product)
