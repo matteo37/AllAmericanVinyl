@@ -1,7 +1,23 @@
+from copy import deepcopy
 from django.contrib import admin
 from mezzanine.pages.admin import PageAdmin
-from vinylSite.models import Contact, Products, About
+from vinylSite.models import Contact, Products, About, Product
 
-admin.site.register(Contact, PageAdmin)
-admin.site.register(Products, PageAdmin)
-admin.site.register(About, PageAdmin)
+'''
+page_fieldsets = deepcopy(PageAdmin.fieldsets)
+page_fieldsets[0][1]["fields"].insert(-2, "products")
+'''
+extra_fieldsets = ((None, {"fields": ("something",)}),)
+
+class ProductsInline(admin.TabularInline):
+    model = Product
+
+class MyPageAdmin(PageAdmin):
+    inlines = (ProductsInline,)
+    fieldsets = deepcopy(PageAdmin.fieldsets) #+ extra_fieldsets
+
+
+admin.site.register(Contact, MyPageAdmin)
+admin.site.register(Products, MyPageAdmin)
+admin.site.register(About, MyPageAdmin)
+admin.site.register(Product)
