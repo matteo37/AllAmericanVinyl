@@ -1,7 +1,7 @@
 from copy import deepcopy
 from django.contrib import admin
 from mezzanine.pages.admin import PageAdmin
-from vinylSite.models import Contact, Products, About, Product
+from vinylSite.models import Services, Contact, Products, About, Product
 
 '''
 page_fieldsets = deepcopy(PageAdmin.fieldsets)
@@ -18,6 +18,7 @@ class MyPageAdmin(PageAdmin):
 
 
 admin.site.register(Contact, PageAdmin)
+admin.site.register(Services, PageAdmin)
 admin.site.register(Products, MyPageAdmin)
 admin.site.register(About, PageAdmin)
 admin.site.register(Product)
