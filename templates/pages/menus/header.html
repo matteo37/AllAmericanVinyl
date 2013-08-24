@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== --> 
+	<meta charset="utf-8" />
+	<title>All American Vinyl</title>
+<!--     <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" /> -->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+  	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ MEDIA_URL }}styles/skeleton.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/style.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/nivo-slider.css" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/color.css" />
+	<link rel="stylesheet" href="{{ MEDIA_URL }}styles/layout.css" />
+    
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="{{ MEDIA_URL }}images/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ MEDIA_URL }}images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ MEDIA_URL }}images/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ MEDIA_URL }}images/apple-touch-icon-114x114.png" />
+    
+    
+</head>
+
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+        	<div class="container"> 
+                <header id="top" class="twelve columns">
+                	<div id="logo"  class="five columns alpha">
+                         <img width="450" class="shadow" src="{{ MEDIA_URL }}images/aavLogo.jpg" alt="" title="All American Vinyl" />
+                    </div>
+      
+                    <section id="navigation" class="seven columns omega">
+                    <div id="phone">
+                        <h1><span class="colortext">Phone: </span> <span>(801) 373-1308 </span></h1>
+                    </div>
+            		{% load pages_tags %}
+            	
+            		{% page_menu "pages/menus/topnav.html" %}
+                        <div class="clear"></div>
+                    </section>
+                    <div class="clear"></div>
+                </header>
+            </div>
+        </div>
+        <!-- END HEADER -->

@@ -215,7 +215,7 @@ code {
 /*** END CONTAINER ***/
 
 /* HEADER */
-#top{padding:42px 0 30px 0;}
+#top{padding:10px}
 #logo{float:left; padding:0;}
 #logo h1{margin:0; font-size:30px; line-height:30px; text-transform:uppercase}
 
@@ -234,15 +234,23 @@ nav{float:right;}
 	float:left;
 	font-family: 'Oswald', Arial;
 	text-transform:uppercase;
+	top: 90px;
 }
 
 #topnav > li{ margin:0 0 0 22px; word-spacing:2px}
 #topnav > li:first-child{ margin-left:0px;}
-
+.shadow {
+  -moz-box-shadow:    2px 2px 8px 4px #ccc;
+  -webkit-box-shadow: 2px 2px 8px 4px #ccc;
+  box-shadow:         2px 2px 8px 4px #ccc;
+  margin:5px;
+}
 #phone {
-	width:180px
+	width:100%;
+	text-align: right;
 }
 .sf-menu a {
+	font-size: 18px;
 	text-decoration:none!important;
 	display:		block;
 	position:		relative;

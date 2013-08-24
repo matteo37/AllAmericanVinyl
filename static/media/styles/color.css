@@ -53,7 +53,7 @@ tr.odd td {}
 
 
 /*=================================================== Top Menu ===================================================*/
-.sf-menu a, .sf-menu a:visited{color:#9a9a9a;}/* 1st level */
+.sf-menu a, .sf-menu a:visited{color:#7b7b7b;}/* 1st level */
 #topnav li a:hover,
 #topnav .current > a, #topnav  .current > a:hover{color:#393939;}
 
@@ -62,15 +62,15 @@ tr.odd td {}
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	background:#fff;
-	color:#9a9a9a;
+	color:#7b7b7b;
 }
 
 .sf-menu li li { border-bottom:1px dotted #e2e2e2;}
 
-.sf-menu ul li a{ color:#9a9a9a;}
+.sf-menu ul li a{ color:#7b7b7b;}
 .sf-menu ul li a:hover, #topnav li li a.current{color:#AC3030;}
 
-#topnav li li a, .sf-menu li li a, .sf-menu li li a:visited {color:#9a9a9a;}
+#topnav li li a, .sf-menu li li a, .sf-menu li li a:visited {color:#7b7b7b;}
 #topnav li li a:hover, #topnav  .current li a:hover{color:#AC3030;}
 
 /*=================================================== Slider Section ===================================================*/
