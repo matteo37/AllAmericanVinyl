@@ -6,11 +6,15 @@ from django.contrib.auth.models import User
 class About(Page):
     user = models.ManyToManyField(User)
 
+class Services(Page):
+    pass
+
 class Products(Page):
     pass
 
 class Contact(Page):
     address = models.TextField()
+    email_to = models.EmailField()
 
 class Product(models.Model):
     product = models.ForeignKey(Products)

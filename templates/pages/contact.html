@@ -33,7 +33,11 @@
                         
                         <h4 class="titleBold titleUppercase">Contact Form</h4>
                         <div id="contactform">
-                              <form id="contact" action="#">
+				<form method="post" id="contact" action="">{% csrf_token %}
+				      {{contact_form.as_p}}
+                                    <input type="submit" name="submit" class="button" id="submit_btn" value="Send Message"/>
+				      {%comment%}
+
                                 <fieldset>
                                     <span class="error" id="name_error">Please enter name !</span>
                                     <span class="error" id="email_error">Please enter email address !</span>
@@ -44,9 +48,9 @@
                                     <input type="text" name="subject" id="subject"  value="" class="text-input" /><label for="subject" id="subject_label">Subject</label>
                                     <textarea cols="60" rows="10" name="msg" id="msg" class="text-input"></textarea>
                                     <br /><br class="clear" />
-                                    <input type="submit" name="submit" class="button" id="submit_btn" value="Send Message"/>
                                 </fieldset>
-                              </form>
+			{%endcomment%}
+			</form>
                         </div><!-- end contactform -->
                     </div>
                 </section><!-- content -->
