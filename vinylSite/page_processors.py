@@ -12,12 +12,11 @@ def author_form(request, page):
         form = ContactForm(request.POST)
         if form.is_valid():
             # Form processing goes here.
-            msg = form.cleaned_data.get('msg')
+            msg = form.cleaned_data.get('message')
             subject = form.cleaned_data.get('subject')
             name = form.cleaned_data.get('name')
             from_email = form.cleaned_data.get('email')
             to_email = ['bryson.thor@gmail.com']
-            import pdb; pdb.set_trace()  # XXX BREAKPOINT
             try:
                 send_mail(subject, msg, from_email, to_email, fail_silently=False)
                 redirect = request.path + "?sent=true"

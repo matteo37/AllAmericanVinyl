@@ -33,8 +33,21 @@
                         
                         <h4 class="titleBold titleUppercase">Contact Form</h4>
                         <div id="contactform">
-				<form method="post" id="contact" action="">{% csrf_token %}
-				      {{contact_form.as_p}}
+				<form method="post" id="contact" action="/contact/">{% csrf_token %}
+					<table>
+					{% for field in contact_form %}
+					<tr>
+						<td>
+						{{ field.label_tag }}
+					        </td>
+						<td>
+					 	{{ field }}
+						{{ field.errors }}
+					        </td>
+				       </tr>
+					{% endfor %}
+					</table>
+
                                     <input type="submit" name="submit" class="button" id="submit_btn" value="Send Message"/>
 				      {%comment%}
 
