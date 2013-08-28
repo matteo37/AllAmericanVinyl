@@ -1,78 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8" />
-	<title>PureParadise</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-	<meta name="author" content="" />
-
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-
-	<!-- CSS
-  ================================================== -->
-  	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="{{ MEDIA_URL }}styles/skeleton.css" />
-    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/style.css" />
-    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/inner.css" />
-    <link rel="stylesheet" href="{{ MEDIA_URL }}styles/color.css" />
-	<link rel="stylesheet" href="{{ MEDIA_URL }}styles/layout.css" />
-    
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="{{ MEDIA_URL }}images/favicon.ico" />
-	<link rel="apple-touch-icon" href="{{ MEDIA_URL }}images/apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ MEDIA_URL }}images/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ MEDIA_URL }}images/apple-touch-icon-114x114.png" />
-    
-    
-</head>
-
-
-<body>
-<div id="bodychild">
-	<div id="outercontainer">
-    
-        <!-- HEADER -->
-        <div id="outerheader">
-        	<div class="container">
-            <header id="top" class="twelve columns">
-                <div id="logo"  class="four columns alpha"><h1><a href="index"><span class="titleBold">All American </span><span class="colortext">Vinyl</span></a></h1><h3>of Utah</h3></div>
-                <div style="float:right" id="phone"><h2><span class="colortext">Phone: </span> <span>(801) 373-1308 </span></h2></div>
-                <section id="navigation" class="nine columns omega">
-		{% load pages_tags %}
-	
-		{% page_menu "pages/menus/topnav.html" %}
-                    <div class="clear"></div>
-                </section>
-                <div class="clear"></div>
-            </header>
-            </div>
-        </div>
-        <!-- END HEADER -->
  
+{% include "pages/menus/header.html" %}
+
+        
         <!-- AFTER HEADER -->
 		<div id="outerafterheader">
             <div class="container">
                 <div class="twelve columns" id="afterheader">
                     <section id="aftertheheader">
-                     <h1 class="pagetitle"><span>About</span></h1>
-                     <span class="pagedesc">Our <span class="colortext">company</span> information</span>                        
+		     {#<h1 class="pagetitle"><span>Services</span></h1>#}
+                     <span class="pagedesc">Our <span class="colortext">services</span>                       
                      <div class="clear"></div>
                     </section>
                 </div>
@@ -84,7 +20,7 @@
         <div id="outermain">
         	<div class="container">
         	<section id="maincontent" class="twelve columns">
-            
+            	{% comment %}
                 <h4 class="titleUppercase">Why Choose Us</h4>
                 <p><strong>Donec vulputate velit ut turpis vehicula pulvinar. Aliquam porta dictum quam suscipit dignissim. Vestibulum elementum pharetra urna, non gravida <br/>justo rutrum at. Suspendisse potenti.</strong></p>
                 <p><img src="images/content/pic1.png" alt="" class="alignright" /></p>
@@ -95,29 +31,50 @@
                 <p>Curabitur molestie, augue sed dignissim fermentum, justo orci faucibus nisi, non consequat nunc turpis a felis. Nunc eleifend, dui a lobortis consequat, nisl lacus tincidunt urna, non dapibus enim tellus vel lorem. Cras tempus vehicula turpis, non auctor dolor malesuada in. Aenean non magna in ligula tempor fermentum. </p>
                 
                 <div class="separator line"></div>
-                
                 <h4 class="titleUppercase">Meet Our Agents</h4>
+		{% endcomment %}
                 <ul class="list-col-3">
                  <li>
                     <div class="box">
-                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">John Doe</h6>
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 1</h6>
                       <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
                     </div>
                  </li>
                 <li>
                     <div class="box">
-                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">John Doe</h6>
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 2</h6>
                       <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
                     </div>
                  </li>
                 <li class="nomargin">
                     <div class="box">
-                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">John Doe</h6>
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 3</h6>
                       <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
                     </div>
                  </li>
                 </ul>
 
+                <div class="separator line"></div>
+                <ul class="list-col-3">
+                 <li>
+                    <div class="box">
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 4</h6>
+                      <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
+                    </div>
+                 </li>
+                <li>
+                    <div class="box">
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 5</h6>
+                      <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
+                    </div>
+                 </li>
+                <li class="nomargin">
+                    <div class="box">
+                      <p class="margin_bottomoff"><img src="images/content/pic2.jpg" alt="" /></p><div class="boxtext"><h6 class="titleUppercase margin_bottom_small">Service 6</h6>
+                      <p class="margin_bottomoff">Nulla aliquam diam quis arcu pretium ut elementum arcu pretium. Quisque enim lorem.</p></div>
+                    </div>
+                 </li>
+                </ul>
                 <div class="clear"></div><!-- clear float --> 
             </section>
             </div>
